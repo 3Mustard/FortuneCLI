@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+#all you should need to run program.
+
+require "bundler/setup"
+require "./lib/fortune"
+
+Fortune::CLI.new.call

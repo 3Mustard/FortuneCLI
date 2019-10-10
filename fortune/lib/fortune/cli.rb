@@ -58,9 +58,7 @@ class Fortune::CLI
 
 	def draw_card
 		index = rand 22
-		name = Fortune::Card.name_by_index(index)
-		meaning = Fortune::Card.meaning_by_index(index)
-		puts "You drew #{name}"
-		puts "#{meaning}"
+		puts "You drew #{Fortune::Card.name_by_index(index)}"
+		puts "#{Fortune::Card.meaning_by_index(index)}"
 	end
 end 
